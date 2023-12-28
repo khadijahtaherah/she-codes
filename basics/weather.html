@@ -4,12 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <style></style>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        padding-inline-start: 0;
+      }
+
+      .emoji-today {
+        font-size: 25px;
+        padding: 10px 0;
+      }
+
+      .weather-today {
+        color: #274bb7;
+        font-family: "Gill Sans", sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+        padding: 10px 0;
+      }
+
+      .temp-today {
+        font-family: "Gill Sans", sans-serif;
+        font-size: 40px;
+        padding: 10px 0;
+      }
+
+      .today-fahr {
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <div class="emoji-today">🌤️</div>
     <div class="weather-today">Currently 21° in Tokyo</div>
-    <div class="temp-today">13° / 23°</div>
+    <div class="temp-today">
+      13° /
+      <span class="today-fahr"> 23°</span>
+    </div>
     <ul>
       <li>
         <div class="emoji">
