@@ -48,9 +48,13 @@
       }
 
       .temperature {
-        font-family: monospace;
+        font-family: "Courier New", Courier, monospace;
         font-size: 20px;
         padding: 0 0 30px;
+      }
+
+      .temp-fahr {
+        font-weight: bolder;
       }
 
       button {
@@ -85,21 +89,30 @@
           🌧️
           <span class="day">Tomorrow</span>
         </div>
-        <div class="temperature">10° / 22°</div>
+        <div class="temperature">
+          10° /
+          <span class="temp-fahr">22°</span>
+        </div>
       </li>
       <li>
         <div class="emoji">
           ☁️
           <span class="day">Saturday</span>
         </div>
-        <div class="temperature">15° / 17°</div>
+        <div class="temperature">
+          15° /
+          <span class="temp-fahr">17°</span>
+        </div>
       </li>
       <li>
         <div class="emoji">
           ☀️
           <span class="day">Sunday</span>
         </div>
-        <div class="temperature">25° / 28°</div>
+        <div class="temperature">
+          25° /
+          <span class="temp-fahr">28°</span>
+        </div>
       </li>
     </ul>
     <button>Change city</button>
