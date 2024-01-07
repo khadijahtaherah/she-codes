@@ -154,6 +154,18 @@
         let temp = document.querySelector(".temp");
         city.innerHTML = liveCity;
         temp.innerHTML = tempCity;
+
+        let emoji = document.querySelector(".emoji-today");
+
+        if (tempCity <= 10) {
+          emoji.innerHTML = "🥶";
+        } else {
+          if (tempCity >= 35) {
+            emoji.innerHTML = "🥵";
+          } else {
+            emoji.innerHTML = "😀";
+          }
+        }
       }
 
       let changeCityButton = document.querySelector("button");
