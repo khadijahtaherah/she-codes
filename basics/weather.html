@@ -103,7 +103,10 @@
   </head>
   <body>
     <div class="emoji-today">🌤️</div>
-    <div class="weather-today">Currently 21° in Tokyo</div>
+    <div class="weather-today">
+      Currently <span class="temp">21</span>° in
+      <span class="city">Tokyo</span>
+    </div>
     <div class="temp-today">
       13° /
       <span class="today-fahr"> 23°</span>
@@ -144,9 +147,13 @@
     <div class="coded-by">Coded by Khadijah Taherah</div>
     <script>
       function changeCity() {
-        let city = prompt("Which city are you in?");
+        let liveCity = prompt("Which city are you in?");
         let tempCity = prompt("What is there temperature now?");
-        alert(city + " " + tempCity);
+
+        let city = document.querySelector(".city");
+        let temp = document.querySelector(".temp");
+        city.innerHTML = liveCity;
+        temp.innerHTML = tempCity;
       }
 
       let changeCityButton = document.querySelector("button");
