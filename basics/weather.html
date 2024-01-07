@@ -142,5 +142,15 @@
     </ul>
     <button>Change city</button>
     <div class="coded-by">Coded by Khadijah Taherah</div>
+    <script>
+      function changeCity() {
+        let city = prompt("Which city are you in?");
+        let tempCity = prompt("What is there temperature now?");
+        alert(city + " " + tempCity);
+      }
+
+      let changeCityButton = document.querySelector("button");
+      changeCityButton = document.addEventListener("click", changeCity);
+    </script>
   </body>
 </html>
