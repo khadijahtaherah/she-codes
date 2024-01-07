@@ -67,14 +67,18 @@
       <button>Apply Now</button>
     </section>
     <script>
-      let age = prompt("How old are you?");
+      let morning = "Good morning!";
+      let afternoon = "Good afternoon";
+      let evening = "Good evening";
 
-      if (age >= 18) {
-        alert("You can sign up to SheCodes!");
+      let time = prompt("What is the time now?");
+
+      if (time < 12) {
+        alert(morning);
+      } else if (time >= 12 && time < 18) {
+        alert(afternoon);
       } else {
-        alert(
-          "Sorry, you are younger than 18 to be eligible for SheCodes courses :("
-        );
+        alert(evening);
       }
     </script>
   </body>
