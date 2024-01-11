@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tetris</title>
     <style>
+      body {
+        background: linear-gradient(109.6deg, rgb(177, 173, 219) 11.2%, rgb(245, 226, 226) 91.1%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+      }
+
       h1 {
         text-align: center;
         color: black;
@@ -18,6 +25,12 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin: 10px 100px;
         padding: 10px;
+      }
+
+      hr {
+        margin: 0 100px;
+        height: 1px;
+        background: black;
       }
 
       img {
@@ -102,7 +115,7 @@
         audience. Tetris has become a timeless favorite across various platforms, from its original release on the
         Electronika 60 to global success on the Nintendo Game Boy. Its iconic
         <a class="music" href="https://youtu.be/NmCCQxVBfyM?si=waRgjT5OVb9ZsXJ_" target="_blank">
-          <em>music</em>
+          <em><strong>music</strong></em>
         </a>
         and addictive gameplay,
         coupled with its impact on cognitive research, have solidified Tetris as a cultural phenomenon in the world of
@@ -138,7 +151,7 @@
         let name = prompt("Choose a cool name 😎");
 
         if (name.length > 0) {
-          alert("Welcome " + name + "! You are now officially a Tetris Warrior! 🙌");
+          alert("Welcome " + name + "! You are now officially a Tetris Warrior! 🙌🎮");
         } else {
           alert("Uh-oh.. you don't have a name, you cannot play 😖");
         }
