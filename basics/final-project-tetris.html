@@ -180,11 +180,16 @@
       <span class="footer">Built by Khadijah Taherah@2024</span>
     </div>
     <script>
+      function goToUrl() {
+        let url = window.location.assign("https://tetris.com/play-tetris");
+      }
       function playTetris() {
         let name = prompt("Choose a cool name 😎");
 
         if (name.length > 0) {
-          alert("Welcome " + name + "! You are now officially a Tetris Warrior! 🙌🎮");
+          if (window.confirm("Welcome " + name + "! You are now officially a Tetris Warrior! 🎮. Click 'OK' to play the game.")) {
+            window.location.href = "https://tetris.com/play-tetris";
+          }
         } else {
           alert("Uh-oh.. you don't have a name, you cannot play 😖");
         }
