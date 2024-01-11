@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <h1>Have you heard about Tetris?</h1>
-      <h2>Tetris is SUPER FUN</h2>
+      <h2>Tetris is SUPER FUN!</h2>
       <hr />
       <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/101/original/tetris.png?1704959380"
         width="200" alt="Tetris" />
@@ -50,10 +50,23 @@
           Chat-GPT
         </a>
       </div>
-      <button>Try Tetris Online</button>
+      <button>Play Tetris Online</button>
       <br />
       <span class="footer">Built by Khadijah Taherah @ 2024</span>
     </div>
+    <script>
+      function playTetris() {
+        let name = prompt("Choose a cool name 😎");
+
+        if (name.length > 0) {
+          alert("Welcome " + name + "! You are now officially a Tetris Warrior! 🙌");
+        } else {
+          alert("Uh-oh.. you don't have a name, you cannot play 😖");
+        }
+      }
+      let playButton = document.querySelector("button");
+      playButton.addEventListener("click", playTetris);
+    </script>
   </body>
 
 </html>
