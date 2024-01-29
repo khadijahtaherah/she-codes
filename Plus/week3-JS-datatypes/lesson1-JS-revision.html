@@ -15,7 +15,8 @@
 
       //check if name is valid
       if (name.length > 0) {
-        alert("Welcome " + name + "! Nice to have you here :)");
+        //trim() - remove whitespace at the start or end of string
+        alert("Welcome " + name.trim() + "! Nice to have you here :)");
       } else {
         alert("Uh-oh you must be an alien. Find a name now!");
       }
