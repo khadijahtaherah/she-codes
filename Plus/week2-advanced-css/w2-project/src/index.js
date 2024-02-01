@@ -41,7 +41,9 @@ let exist = 0;
 for (let i = 0; i < weather.length; i++) {
   if (userCity === weather[i].city) {
     alert(
-      `It is currently ${weather[i].temp}°C in ${weather[i].city} with a humidity of ${weather[i].humidity}%`
+      `It is currently ${weather[i].temp}°C in ${
+        weather[i].city.charAt(0).toUpperCase() + weather[i].city.slice(1)
+      } with a humidity of ${weather[i].humidity}%`
     );
     exist = 1;
   }
