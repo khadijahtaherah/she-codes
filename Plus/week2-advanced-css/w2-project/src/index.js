@@ -28,7 +28,20 @@ let weather = [
 
 // write your code here
 //first add button selector
+let inputCity = prompt("Enter city: ");
+
 //lowercase input
+let userCity = inputCity.toLowerCase();
+console.log(userCity);
+
 //compare input with array element
+for (let i = 0; i < weather.length; i++) {
+  if (userCity === weather[i].city) {
+    alert(
+      `It is currently ${weather[i].temp}°C in ${weather[i].city} with a humidity of ${weather[i].humidity}%`
+    );
+  }
+}
+
 //if matches -> alert output data
 //if not -> alert link info
