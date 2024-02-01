@@ -32,16 +32,23 @@ let inputCity = prompt("Enter city: ");
 
 //lowercase input
 let userCity = inputCity.toLowerCase();
-console.log(userCity);
+//console.log(userCity);
 
 //compare input with array element
+//if matches -> alert output data
+//if not -> alert link info
+let exist = 0;
 for (let i = 0; i < weather.length; i++) {
   if (userCity === weather[i].city) {
     alert(
       `It is currently ${weather[i].temp}°C in ${weather[i].city} with a humidity of ${weather[i].humidity}%`
     );
+    exist = 1;
   }
 }
 
-//if matches -> alert output data
-//if not -> alert link info
+if (exist < 1) {
+  alert(
+    `Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${userCity}`
+  );
+}
